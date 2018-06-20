@@ -1,0 +1,202 @@
+/* Table of contents
+_______________________________________
+- Navigation
+- Page Elements
+- Typography
+- Links
+- Images
+- Scrolls
+*/
+
+@font-face {
+  src:url('../fonts/AkkuratStd-Bold.otf');
+  font-family: "AkkuratBold";
+}
+
+@font-face {
+  src:url('../fonts/AkkuratStd-BoldItalic.otf');
+  font-family: "AkkuratBoldItalic";
+}
+
+@font-face {
+  src:url('../fonts/AkkuratStd-Italic.otf');
+  font-family: "AkkuratItalic";
+}
+
+@font-face {
+  src:url('../fonts/AkkuratStd-Light.otf');
+  font-family: "AkkuratLight";
+}
+
+@font-face {
+  src:url('../fonts/AkkuratStd-LightItalic.otf');
+  font-family: "AkkuratLightItalic";
+}
+
+@font-face {
+  src:url('../fonts/AkkuratStd-Regular.otf');
+  font-family: "AkkuratRegular";
+}
+
+/* Navigation
+_______________________________________*/
+
+.menu_left {
+  font-family: AkkuratRegular;
+  font-size: 14px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 2em;
+}
+
+.menu {
+  font-family: AkkuratRegular;
+  font-size: 14px;
+  color: #373737;
+  float: right;
+  display: inline-block;
+  position: relative;
+  margin-right: 2em;
+}
+
+.menu_container {
+  width: 100vw;
+  height: 60px;
+  padding-top: 1.2em;
+}
+
+.menu_nav {
+  padding-left: 2em;
+}
+
+/*Typography
+_______________________________________*/
+
+
+h3 {
+  font-family: AkkuratBold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 5em;
+  padding: 1em;
+  color: black;
+}
+
+.title {
+  font-family: AkkuratBold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 18%;
+  color: white;
+  /*overflow: hidden;*/
+}
+
+/*Page Elements
+_______________________________________*/
+
+.entry_typewritter {
+  font-family: AkkuratRegular;
+  font-size: 30px;
+  margin-top: 1em;
+  text-align: left;
+  margin-left: 1em;
+}
+
+.content_main_container {
+  width: 96.5vw;
+  height: auto;
+  margin-left: 1.4em;
+  margin-top: 20%;
+}
+
+.opacity_hover {
+  width: 96.5vw;
+  height: auto;
+  background-color: red;
+}
+
+/* Highlighted content
+_________________________________________ */
+
+.subcontainer {
+  margin-top: -20px;
+  left: 0;
+}
+
+.container_homepage {
+  width: 96.5vw;
+  height: 30vw;
+  background-color: black;
+}
+
+.profilesContainer{
+  padding: 1em;
+  margin-top: 3em;
+  font-family: AkkuratRegular;
+  font-size: 15px;
+  text-align: left;
+  border-color: red;
+  border-width: 2px;
+}
+
+.typewriterBox {
+  width: 96.5vw;
+  height: 50px;
+}
+
+/* Links
+_________________________________________ */
+
+a.ex1:link {
+    color: black;
+    text-decoration: none;
+}
+a.ex1:visited {
+    color: black;
+    text-decoration: none;
+}
+a.ex1:hover {
+    text-decoration: none;
+}
+
+/* Images
+_______________________________________ */
+
+.img_proj1 {
+  /*background: url('../assets/flow.jpg');*/
+  width: 96.5vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 0;
+}
+
+/*Extras
+_______________________________________*/
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Hover
+_______________________________________*/
