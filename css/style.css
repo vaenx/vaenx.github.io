@@ -76,7 +76,7 @@ _______________________________________*/
     margin-top: 6em;
     font-size: 24px;
     line-height: 38px;
-    font-family: sans-serif;
+    font-family: Helvetica;
     max-width: 90%;
 }
 
@@ -194,6 +194,8 @@ a.ex1:visited {
 a.ex1:hover {
     text-decoration: none;
 }
+
+/*_______________________________________ */
 
 a.ex2:link {
     color: #C83CFF;
