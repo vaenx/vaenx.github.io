@@ -124,6 +124,16 @@ _______________________________________*/
   max-width: 80%;
 }
 
+.still_typewritter {
+  font-family: AkkuratRegular;
+  font-size: 30px;
+  margin-top: 1em;
+  text-align: left;
+  margin-left: 1em;
+  line-height: 48px;
+  max-width: 80%;
+}
+
 .content_main_container {
   width: 96.5vw;
   height: auto;
@@ -174,14 +184,26 @@ _________________________________________ */
 _________________________________________ */
 
 a.ex1:link {
-    color: blue;
+    color: black;
     text-decoration: none;
 }
 a.ex1:visited {
-    color: blue;
+    color: black;
     text-decoration: none;
 }
 a.ex1:hover {
+    text-decoration: none;
+}
+
+a.ex2:link {
+    color: #C83CFF;
+    text-decoration: none;
+}
+a.ex2:visited {
+    color: #C83CFF;
+    text-decoration: none;
+}
+a.ex2:hover {
     text-decoration: none;
 }
 
