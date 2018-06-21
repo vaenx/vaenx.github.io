@@ -76,14 +76,24 @@ _______________________________________*/
     margin-top: 6em;
     font-size: 24px;
     line-height: 38px;
-    font-family: Helvetica;
+    font-family: AkkuratLight;
     max-width: 90%;
+}
+
+.infoText1 {
+    margin-top: 20em;
+    font-size: 16px;
+    line-height: 38px;
+    font-family: AkkuratLight;
+    max-width: 90%;
+    margin-left: 2em;
 }
 
 h3 {
   font-family: AkkuratBold;
   font-size: 30px;
   letter-spacing: 2px;
+  margin-top: -10px;
   padding: 1em;
   color: black;
 }
@@ -154,8 +164,9 @@ _______________________________________*/
 _________________________________________ */
 
 .subcontainer {
-  margin-top: -20px;
+  margin-top: 350px;
   left: 0;
+  margin-right: 2em;
 }
 
 .container_homepage {
