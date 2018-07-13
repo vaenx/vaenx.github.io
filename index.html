@@ -8,61 +8,90 @@
    <script src="js/p5/p5.js"></script>
    <script src="js/typed.js"></script>
    <script src="js/script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/grid.css">
    <link rel="stylesheet" href="css/hover.css">
    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="menu_container">
-      <div>
-        <a class="menu_left ex1" href="#">Home</a>
+    <div class="main_container">
+      <header>
+        <nav>
+          <li class="navigation_items_left">
+            <a class="ex2 btn_link" href="about.html"><h4>About</h4></a>
+          </li>
+        </nav>
+        <div class="navigation_items_container_right">
+          <li class="navigation_items_right">
+            <a class="ex2 btn_link" href="#contact"><h4>Contact</h4></a>
+          </li>
+        </div>
+      </header>
+      <div class="home_nametitle">
+        <h5>Vanessa Vilela | Product Designer</h5>
       </div>
-      <div class="menu">
-        <a class="menu_nav ex1" href="https://www.dropbox.com/s/3dzije3rpwe2ngq/cv_vanessavilela2018.pdf?dl=0">Download CV</a>
-        <a class="menu_nav ex1" href="mailto:vanessaveigavilela@gmail.com?Subject=Let's%20talk" target="_top">Contact</a>
+      <div class="home_tagline">
+        <h1 class="entry_typewritter"></h1>
       </div>
-    </nav>
-    <main>
-      <h3>UX | UI Designer</h3>
-      <div class="entry_typewritter typewriterBox"></div>
-      <h4 class="infoText">You can find me building
-        <a class="ex2" href="https://market.brixel.io/">Brixel</a>,
-        <a class="ex2" href="https://dribbble.com/vanessaveigavilela">  designing</a>,
-        <a class="ex2" href="https://medium.com/@Vaenx">writing</a>
-        and, more often than not,
-        <a class="ex2" href="https://www.instagram.com/vanessaveigavilela/">taking pictures</a>.
-      </h4>
-      <h5 class="infoText1">
-        <a class="ex1" href="https://www.linkedin.com/in/vanessaveigavilela/">Linkedin</a> |
-        <a class="ex1" href="https://dribbble.com/vanessaveigavilela">Dribbble</a> |
-        <a class="ex1" href="https://medium.com/@Vaenx">Medium</a>
-      </h5>
-
-      <!--work overview-->
-
-      <!-- <div class="content_main_container">
-        <div class="subcontainer">
-          <a href="" class="ex1 hvr-shrink">
-            <div class="opacity_hover">
-              <div class="container_homepage img_proj1">
-                <p class="title">Brixel</p>
+      <div class="scroll_container">
+        <h3 class="animated infinite slideInUp">scroll</h3>
+      <main>
+        <div class="projects_container">
+          <h2 class="title_projects">Recent Work</h2>
+          <div class="grid">
+            <a href="proj1.html">
+              <div class="grid__col grid__col--1-of-2 projects_1left">
+                <img src="assets/match_2016@2x.png" alt="Brixel Market" class="proj_image">
+                <div class="overlay">
+                  <div class="overlay_text">
+                    <h1>Brixel Market</h1><h4>Product Design</h4>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="grid__col grid__col--1-of-2 projects_1right">
+              <img src="assets/live_fitting_room.png" alt="Live Fitting Room" class="proj_image">
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h1>Live Fitting Room</h1><h4>Concept</h4>
+                </div>
               </div>
             </div>
-          </a>
-          <! <a href="" class="ex1 hvr-shrink">
-            <div class="container_homepage">
-              <p class="title">Project 2</p>
+            <div class="grid__col grid__col--1-of-2 projects_1left">
+              <img src="assets/buildingfutures.jpg" alt="Building Futures" class="proj_image">
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h1>Building Futures</h1><h4>Thesis Concept</h4>
+                </div>
+              </div>
             </div>
-          </a>
-          <a href="" class="ex1 hvr-shrink">
-            <div class="container_homepage">
-              <p class="title">Project 3</p>
+            <div class="grid__col grid__col--1-of-2 projects_1right">
+              <img src="assets/workoutBud.png" alt="Workout Bud" class="proj_image">
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h1>Workout Bud</h1><h4>Concept</h4>
+                </div>
+              </div>
             </div>
-          </a>
+            <footer>
+              <div class="contact_me" id="contact">
+                <h4>Let's talk:</h4>
+                <h4>vanessaveigavilela@gmail.com</h4>
+              </div>
+              <div class="icon_container">
+                <a class="ex2" href="https://dribbble.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/dribbble.svg"/><h4 class="icon_label">Dribbble</h4></a>
+                <a class="ex2" href="https://www.linkedin.com/in/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/linkedin.svg"/><h4 class="icon_label">Linkedin</h4></a>
+                <a class="ex2" href="https://instagram.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/instagram.svg"/><h4 class="icon_label">Instagram</h4></a>
+                <a class="ex2" href="https://twitter.com/vanessavilela__" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/twitter.svg"/><h4 class="icon_label">Twitter</h4></a>
+                <a class="ex2" href="https://medium.com/@Vaenx" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/medium.svg"/><h4 class="icon_label">Medium</h4></a>
+              </div>
+            </footer>
+          </div>
         </div>
-      </div> -->
-
+      </div>
     </main>
   </body>
+
 </html>

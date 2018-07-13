@@ -38,75 +38,117 @@ _______________________________________
   font-family: "AkkuratRegular";
 }
 
+/* Responsive
+_______________________________________*/
+
+html {
+  box-sizing: border-box;
+}
+
 /* Navigation
 _______________________________________*/
 
-.menu_left {
-  font-family: AkkuratRegular;
-  font-size: 14px;
+/* .main_nav ul {
+  display: grid;
+  grid-gap: 20px;
+} */
+
+.navigation_items_left {
+  margin: 0;
+  padding-right: 20px;
   display: inline-block;
-  position: absolute;
-  margin-left: 2em;
+  text-align: left;
+  list-style: none;
+  float: left;
 }
 
-.menu {
-  font-family: AkkuratRegular;
-  font-size: 14px;
-  color: #373737;
+.navigation_items_container_right {
+  align-self: right;
+}
+
+.navigation_items_right {
+  margin: 0;
+  padding-left: 20px;
+  display: inline-block;
+  text-align: right;
+  list-style: none;
   float: right;
-  display: inline-block;
-  position: relative;
-  margin-right: 2em;
-}
-
-.menu_container {
-  width: 100vw;
-  height: 60px;
-  padding-top: 1.2em;
-}
-
-.menu_nav {
-  padding-left: 2em;
 }
 
 /*Typography
 _______________________________________*/
 
-.infoText {
-    margin-top: 6em;
-    font-size: 24px;
-    line-height: 38px;
-    font-family: AkkuratLight;
-    max-width: 90%;
+h1 {
+  font-family: AkkuratRegular;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: left;
+  color: #262626;
 }
 
-.infoText1 {
-    margin-top: 20em;
-    font-size: 16px;
-    line-height: 38px;
-    font-family: AkkuratLight;
-    max-width: 90%;
-    margin-left: 2em;
+h2 {
+  font-family: AkkuratRegular;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #262626;
 }
 
 h3 {
-  font-family: AkkuratBold;
-  font-size: 30px;
-  letter-spacing: 2px;
-  margin-top: -10px;
-  padding: 1em;
-  color: black;
+  font-family: AkkuratLight;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+  color: #D0D0D0;
 }
 
 h4 {
-  font-family: AkkuratRegular;
+  font-family: AkkuratLight;
   font-size: 14px;
-  font-weight: 100;
-  display: inline-block;
-  position: absolute;
-  margin-left: 1.3em;
-  margin-top: 1em;
-  line-height: 24px;
+  text-align: left;
+  color: #262626;
+  text-decoration: none;
+  text-align: center;
+}
+
+h5 {
+  font-family: AkkuratLight;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #262626;
+  text-decoration: none;
+  text-align: left;
+}
+
+h6 {
+  font-family: AkkuratRegular;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #262626;
+  text-decoration: none;
+  text-align: left;
+}
+
+.infoText {
+  margin-top: 6em;
+  font-size: 24px;
+  line-height: 38px;
+  font-family: AkkuratLight;
+  max-width: 90%;
+}
+
+.infoText1 {
+  margin-top: 20em;
+  font-size: 16px;
+  line-height: 38px;
+  font-family: AkkuratLight;
+  max-width: 90%;
+  margin-left: 2em;
 }
 
 .title {
@@ -119,6 +161,9 @@ h4 {
   /*overflow: hidden;*/
 }
 
+.title_projects {
+  margin-bottom: 30px;
+}
 
 /*Page Elements
 _______________________________________*/
@@ -126,11 +171,8 @@ _______________________________________*/
 .entry_typewritter {
   font-family: AkkuratRegular;
   font-size: 30px;
-  margin-top: 1em;
   text-align: left;
-  margin-left: 1em;
-  line-height: 48px;
-  max-width: 80%;
+  line-height: 42px;
 }
 
 .still_typewritter {
@@ -143,51 +185,184 @@ _______________________________________*/
   max-width: 80%;
 }
 
-.content_main_container {
-  width: 96.5vw;
-  height: auto;
-  margin-left: 1.4em;
-  margin-top: 20%;
+.svg_icons {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  position: relative;
 }
 
-.opacity_hover {
-  width: 96.5vw;
-  height: auto;
-  background-color: red;
-}
-.profilepic {
-  width: 100px;
-  height: 100px;
+.icon_label {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
 }
+
+.proj_image {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+}
+
 /* Highlighted content
 _________________________________________ */
 
-.subcontainer {
-  margin-top: 350px;
+header {
+  width: 100%;
+  margin-bottom: 100px;
+  position: absolute;
+}
+
+body {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  position: absolute;
+  margin-bottom: 0;
+}
+
+.main_container {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.home_nametitle {
+  width: 100%;
+  margin-top: 30vh;
+  position: absolute;
+}
+
+.home_menutitle {
+  width: 100%;
+  margin-top: 25vh;
+  position: absolute;
+}
+
+.home_tagline {
+    width: 100%;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+}
+
+.scroll_container {
+  width: 100%;
+  margin-top: 80vh;
+  position: absolute;
+  text-align: center;
+}
+
+.projects_container {
+  width: 100%;
+  margin-top: 55px;
+  position: absolute;
+  z-index: 0;
+}
+
+.projects_1left {
+  height: 350px;
+  background-color: blue;
+  z-index: 1;
+  position: relative;
+}
+
+.projects_1right {
+  height: 350px;
+  background-color: yellow;
+  z-index: 1;
+  position: relative;
+}
+
+.contact_me {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: absolute;
+  text-align: center;
+}
+
+.icon_container {
+  width: 15%;
+  margin-top: 140px;
+  margin-bottom: 80px;
+  margin-left: 42.5%;
+  margin-right: 42.5%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  position: absolute;
+}
+
+.center_content {
+  align-self: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
-  margin-right: 2em;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, .7);
 }
 
-.container_homepage {
-  width: 96.5vw;
-  height: 30vw;
-  background-color: black;
+.projects_1left:hover .overlay {
+  opacity: 1;
 }
 
-.profilesContainer{
-  padding: 1em;
-  margin-top: 3em;
-  font-family: AkkuratRegular;
-  font-size: 15px;
-  text-align: left;
-  border-color: red;
-  border-width: 2px;
+.projects_1right:hover .overlay {
+  opacity: 1;
 }
 
-.typewriterBox {
-  width: 96.5vw;
-  height: 50px;
+.overlay_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about_me {
+  width: 100%;
+  margin-top: 40vh;
+  margin-bottom: 0vh;
+  max-width: 700px;
+}
+
+.footer {
+  margin-top: 15vh;
+}
+
+.footer_proj {
+  margin-top: 60vh;
 }
 
 /* Links
@@ -207,16 +382,15 @@ a.ex1:hover {
 
 /*_______________________________________ */
 
-a.ex2:link {
-    color: #C83CFF;
-    text-decoration: none;
-}
-a.ex2:visited {
-    color: #C83CFF;
-    text-decoration: none;
-}
+
 a.ex2:hover {
-    text-decoration: none;
+  opacity: 0.7;
+  text-decoration: line-through;
+  color: #7E29F2;
+}
+
+.btn_link {
+  text-decoration: none;
 }
 
 /* Images
