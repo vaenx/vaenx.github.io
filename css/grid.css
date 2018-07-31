@@ -246,7 +246,6 @@
   display: inline-block;
   margin-right: -.25em;
   min-height: 1px;
-  padding-left: 20px;
   vertical-align: top; }
   @media (max-width: 700px) {
     .grid__col {
