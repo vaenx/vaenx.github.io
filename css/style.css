@@ -385,7 +385,22 @@ footer {
   margin-top: 15vh;
 }
 
+/* Blogpost Detail
+_________________________________________ */
 
+.blogpost_intro {
+  width: 100%;
+  margin-top: 20vh;
+  margin-bottom: 0vh;
+  max-width: 600px;
+}
+
+.blogpost_detail_container {
+  width: 100%;
+  position: absolute;
+  margin-top: -5vh;
+  z-index: 0;
+}
 
 /* Project Detail
 _________________________________________ */
@@ -478,6 +493,22 @@ a.ex3:visited {
     text-decoration: none;
 }
 a.ex3:hover {
+  opacity: 0.7;
+  text-decoration: line-through;
+  color: #7E29F2;
+}
+
+/*_________________________________________ */
+
+a.ex4:link {
+    color: #262626;
+    text-decoration: none;
+}
+a.ex4:visited {
+    color: #262626;
+    text-decoration: none;
+}
+a.ex4:hover {
   opacity: 0.7;
   text-decoration: line-through;
   color: #7E29F2;
