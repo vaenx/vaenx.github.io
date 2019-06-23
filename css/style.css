@@ -116,6 +116,7 @@ h4 {
 h5 {
   font-family: AkkuratLight;
   font-size: 12px;
+  line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: left;
@@ -128,13 +129,31 @@ h6 {
   font-family: AkkuratRegular;
   font-size: 12px;
   letter-spacing: 2px;
+  line-height: 28px;
   text-transform: uppercase;
   text-align: left;
   color: #262626;
   text-decoration: none;
-  text-align: left;
 }
 
+h7 {
+  font-family: AkkuratLight;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #262626;
+  font-weight: 100;
+}
+
+h8 {
+  font-family: AkkuratRegular;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #262626;
+  text-decoration: none;
+}
 
 .infoText {
   margin-top: 6em;
@@ -398,6 +417,8 @@ _________________________________________ */
 
 .blogpost_detail_container {
   width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
   position: absolute;
   margin-top: -5vh;
   z-index: 0;
@@ -490,7 +511,8 @@ a.ex3:link {
     text-decoration: none;
 }
 a.ex3:visited {
-    color: #C3C6C9;
+    /* color: #C3C6C9; */
+    color: #7E29F2;
     text-decoration: none;
 }
 a.ex3:hover {
