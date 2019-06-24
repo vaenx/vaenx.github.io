@@ -166,6 +166,15 @@ h9 {
   text-decoration: none;
 }
 
+h10 {
+  font-family: AkkuratLight;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #262626;
+  text-decoration: none;
+}
+
 .infoText {
   margin-top: 6em;
   font-size: 24px;
@@ -433,6 +442,11 @@ _________________________________________ */
   position: absolute;
   margin-top: -5vh;
   z-index: 0;
+}
+
+.blogpost_quote_container {
+  margin-top: 3vh;
+  text-align: right;
 }
 
 /* Project Detail
