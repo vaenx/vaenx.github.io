@@ -155,6 +155,17 @@ h8 {
   text-decoration: none;
 }
 
+h9 {
+  font-family: AkkuratRegular;
+  line-height: 32px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #262626;
+  text-decoration: none;
+}
+
 .infoText {
   margin-top: 6em;
   font-size: 24px;
