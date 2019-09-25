@@ -544,6 +544,7 @@ a.ex2:active {
 a.ex3:link {
     color: #7E29F2;
     text-decoration: none;
+    overflow-wrap: break-word;
 }
 a.ex3:visited {
     /* color: #C3C6C9; */
