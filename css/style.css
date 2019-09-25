@@ -203,10 +203,10 @@ h10 {
 }
 
 .announcement {
-  font-family: AkkuratBold;
-  font-size: 30px;
-  letter-spacing: 2px;
+  font-family: AkkuratRegular;
+  font-size: 25px;
   text-align: center;
+  align-self: center;
   padding: 5%;
   color: #262626;
   /*overflow: hidden;*/
