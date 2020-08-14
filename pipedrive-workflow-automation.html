@@ -7,7 +7,7 @@
    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
    <script src="js/p5/p5.js"></script>
    <script src="js/typed.js"></script>
-   <script src="js/script.js"></script>
+   <script src="js/script.js" defer></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/animate.css">
@@ -46,145 +46,268 @@
       </div>
     </div>
 
-    <main>
-      <div class="projects_detail_container">
-        <div class="grid">
-          <div class="grid__col grid__col--2-of-2">
-            <img src="assets/automation_designsprint_timeline2@3x.png" class="proj_image_full">
-          </div>
-          <div class="title_projects proj_detail_content detail_content_center">
-            <h6>The design sprint</h6>
-          </div>
-          <div class="proj_detail_content detail_content_center">
-            <h2>To address this issue we started by scheduling a 5-day design sprint based on Google Venture's book by Jake Knapp,
-              entitled <a class="ex3" href="https://www.thesprintbook.com/"><i>Sprint</i></a>.
-            We gathered a small group of 3 developers, 2 designers, 1 researcher and 1 product manager and occasionally invited sales representatives.</h2>
-          </div>
-          <div class="proj_detail_content detail_content_center">
-            <h5>Day 1</h5>
-            <h2>We kicked the week off with an overview of what we want to achieve each day. It is crucial that we keep the plan by the end of each day,
-            because our end-goal is to test a working prototype on Friday to collect feedback and start a
-            <a class="ex3" href="https://medium.com/pipedrive-developers/scaling-pipedrive-engineering-from-teams-to-tribes-8f14fd92df8c">mission</a>
-            as soon as possible. The plan is to write down our assumptions regarding Workflow Automation and define our long-term goal, after which we add
-            our <i>How Might We</i> notes to the wall so we can actually define the end target we are going to focus on.
-            Oh and at the same time a few interviews are being done by our amazing researcher, so we have our personas ready to help keep us on track.</h2>
-          </div>
-          <div class="grid__col grid__col--2-of-2">
-            <img src="assets/automation_designsprint_photos_day1@3x.png" class="proj_image_full">
-          </div>
-          <div class="proj_detail_content detail_content_center">
-            <h5>Day 2</h5>
-            <h2>With an idea in mind of what we want to tackle, it is time to do some benchmarking and start thinking about possible solutions.
-            Let's diverge! We sit, we grab interesting examples and we present them to each other. It is very cool to have developers involved in the whole process
-            I might say!</h2>
-          </div>
-          <div class="grid__col grid__col--2-of-2">
-            <img src="assets/automation_designsprint_photos_day2@3x.png" class="proj_image_full">
-          </div>
-          <div class="proj_detail_content detail_content_center">
-            <h5>Day 3</h5>
-            <h2>Have an idea? Let's put it down! Time to converge and show everyone what our thoughts are. We grabbed post-its
-            and Sharpies and put our ideas in gallery view to later explain them to everyone and start the voting process on the ones we thought
-            might be the most valuable. This is particularly useful to have uncommon thoughts see the light of day and influence the
-            duller ones. Then the hard part begins, when we hit the board to try to make use of what our lovely minds came up with, trying to answer
-            the problem we identified the day before, in the specific parts that were mapped as those that needed more attention.</h2>
-          </div>
-          <div class="grid__col grid__col--2-of-2">
-            <img src="assets/automation_designsprint_photos_day3@3x.png" class="proj_image_full">
-          </div>
-          <div class="proj_detail_content detail_content_center">
-            <h5>Day 4</h5>
-            <h2>This is prototype day! After deciding on a flow we were all comfortable with and that respected our northern star goal,
-            the day has finally come to put them into a hi-fi prototype (as much as possible). While designers were mainly busy with putting the
-            prototype together, the rest was busy working on a script and preparing the usability testing for the next day.</h2>
-            <h2>We focused mainly on (1) providing pre-made templates for the most used automations within Pipedrive, which would consequently
-            jumpstart the use of a <i>hard to learn</i> feature (based on the result of client surveys);
-            (2) we focused also on building a workflow creation wizard, which purpose would be to guide the user along the way and allow for a reduced
-            amount of customization as well as to make each step of the way as transparent as possible, to increase trust.</h2>
-            <h2>Here are the 2 main screens that reflect our learnings up until this point:</h2>
-          </div>
-          <div class="grid__col grid__col--1-of-2 projects_1left">
-            <img src="assets/automation_designsprint_photos_day4a@3x.png" class="proj_image_full">
-          </div>
-          <div class="grid__col grid__col--1-of-2 projects_1right">
-            <img src="assets/automation_designsprint_photos_day4b@3x.png" class="proj_image_full">
-          </div>
-          <div class="proj_detail_content detail_content_center">
-            <h5 class="special_height">Day 5</h5>
-            <h2>It's Friyay! And we are ready to test the result of these 4 days of deep dive into workflow automation! The prototype will be useful to
-            understand if we are on the right track and answer questions like: <i>will our users value templates?</i> or <i>will template usage trigger
-            the usage of automation as a feature?</i>. So it's time to take notes, ask questions and analyse the results of our design sprint week.
-            Are we ready to use what we have come up with as the basis of our next mission?</h2>
-          </div>
-          <div class="proj_detail_content quote detail_content_center">
-            <h1 style="tex"><font color="#C3C6C9">Ideated, prototyped and tested! Let's build it!</font></h1>
-          </div>
-          <div class="proj_detail_content detail_content_center">
-            <h6>A usability journey</h6>
-            <h2>The basic and first prototype we came up with during the design sprint along with the results and findings we gathered from
-            testing it on friday, will lead the way into the Mission ahead. Changes are incorporated and, for the next 2 months, the focus will
-            be on building a consistent solution and have it tested internally and externally to make sure the changes made are what we
-            are looking for.</h2>
-            <h2>Our initial prototype had some problems that we immediately identified during user testing, but it was useful to make sure we would
-            definitely explore templates and the use of a creation wizard. On the down side? We had a lot to improve regarding onboarding
-            and preparation before landing in the unruly area of <i>the canvas</i>.</h2>
-            <h2>Templates should make users' life easier by allowing to pick a premade workflow, but on version 1 it wasn't completely clear what
-            would trigger the actions and what they would actually be. Also, the idea of making it more transparent and user friendly wasn't quite
-            coming along from there. Along the way we decided to illustrate what the templates would do, which proved much better in terms of
-            both user understanding and engagement.</h2>
-          </div>
-          <div class="grid__col grid__col--1-of-2 projects_1left">
-            <img src="assets/automation_designsprint_photos_day5a@3x.png" class="proj_image_full">
-          </div>
-          <div class="grid__col grid__col--1-of-2 projects_1right">
-            <img src="assets/automation_designsprint_photos_day5b@3x.png" class="proj_image_full">
-          </div>
-          <!--div class="proj_detail_content detail_content_center">
-            <h2 class="grid__col grid__col--2-of-2 special_height">Let's find the differences. Between the first version of this prototype and its final implementation, many changes were made and
-            so ... </h2>
-          </div-->
-          <div class="proj_detail_content detail_content_center special_height">
-            <h2>Even if some core ideas remained — visual representation of the expected workflow, representation of the value provided to the user,
-            the immediate readability of the workflow alone and the filtration through a sidebar — there was an evolution towards a more visually
-            appealing solution, mainly to make it as friendly as possible and hopefully bring back the customers that the automation feature was scaring away.</h2>
-            <h2>The workflow creation wizard was a challenge in itself. We did want to both introduce the concept of triggers, actions and conditions to
-            users who are less familiar with using the <i>canvas</i>, as well as to help map the idea of consequence and timeline at the same time.
-            Finally we decided to focus on the idea of a unique timeline and ditched the skeleton of the canvas next to the blocks of triggers and actions,
-            since after testing with users it proved to be mostly a distraction rather than an added value to explain the process.</h2>
-          </div>
-          <div class="grid__col grid__col--1-of-2 projects_1left">
-            <img src="assets/automation_designsprint_photos_day5c@3x.png" class="proj_image_full">
-          </div>
-          <div class="grid__col grid__col--1-of-2 projects_1right">
-            <img src="assets/automation_designsprint_photos_day5d@3x.png" class="proj_image_full">
-          </div>
-          <div class="proj_detail_content detail_content_center special_height">
-            <h2>We focused in providing working templates that users could quickly put in place, making it much easier to create an automated workflow, and
-              in increasing user trust by focusing on reducing visual complexity and adding a more humane touch. Illustrations played a key role in that
-              process, turning the whole <i>automatic</i> aura of the feature, at the same time that it stressed the time people would be saving by
-              relying on automatic workflows to help them with more repetitive tasks.</h2>
-            <h2></h2>
-          </div>
-          <div class="grid__col grid__col--2-of-2">
-            <img src="assets/automation_designsprint_prototype@3x.png" class="proj_image_full">
-          </div>
-          <footer>
-            <div class="contact_me" id="contact">
-              <h4>Let's talk:</h4>
-              <h4>vanessaveigavilela@gmail.com</h4>
-            </div>
-            <div class="icon_container">
-              <a class="ex2" href="https://dribbble.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/dribbble.svg"/><h4 class="icon_label">Dribbble</h4></a>
-              <a class="ex2" href="https://www.linkedin.com/in/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/linkedin.svg"/><h4 class="icon_label">Linkedin</h4></a>
-              <a class="ex2" href="https://instagram.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/instagram.svg"/><h4 class="icon_label">Instagram</h4></a>
-              <a class="ex2" href="https://twitter.com/vanessavilela__" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/twitter.svg"/><h4 class="icon_label">Twitter</h4></a>
-              <a class="ex2" href="https://medium.com/@Vaenx" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/medium.svg"/><h4 class="icon_label">Medium</h4></a>
-            </div>
-          </footer>
+    <ul class="tabs_container">
+      <li data-tab-target="#design-process" class="active tab">Design Process</li>
+      <li data-tab-target="#design-sprint" class="tab">The Design Sprint</li>
+    </ul>
 
-        </div>
+    <div class="tab-content">
+      <div id="design-process" data-tab-content class="active">
+        <main>
+          <div class="projects_detail_container">
+            <div class="grid">
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/automation_designsprint_prototype@3x.png" class="proj_image_full">
+              </div>
+              <div class="title_projects proj_detail_content detail_content_center">
+                <h6>Workflow Automation Templates</h6>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>The team</h5>
+                <h2>On this project were consistently working 1 product manager, 1 product researcher, 1 data analyst and 3-5 backend and frontend developers.
+                </h2>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>My role</h5>
+                <h2>I worked as a product designer for this project, being involved in it since its ideation phase. I worked together with the researcher and the PM to define flows, sketch early mockups and interview users. I prototyped solutions and performed usability tests with internal and external users and had the development team involved throughout the whole design process, which was key in having their feedback and contribution as early as possible, as well as an edge on the development process.</h2>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>Problem</h5>
+                <h2>Workflow automation allows users to build sequences to perform repetitive tasks which are part of their usual workflows. It is a complex feature that, when correctly used, can help users save time and focus on closing deals. Despite its potential benefits, the fear of doing something wrong when setting up automated workflows pushed users to do one of two things: (1) visit the feature and never go back; and (2) set up an automated workflow without actually running/activating it. Our goal was thus to empower the user in building workflows, removing the friction of setting up a complicated workflow structure, while promoting trust in the automated sequence created, hence contributing to the user’s autonomy in using the feature.</h2>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>Results</h5>
+                <h2>With the implementation of Workflow Automation templates feature usage increased by ~30% in the first three months. We reached some important findings along the way such as improving Workflow Automation’s discoverability; making the automation canvas a more intuitive solution; as well as take power users’ needs of tailoring into consideration.</h2>
+              </div>
+              <!-- <div class="grid__col grid__col--2-of-2"> -->
+              <div class="proj_detail_content detail_content_center">
+                <img src="assets/data_activated_wfs@3x.png" class="proj_image_full">
+              </div>
+              <div class="title_projects proj_detail_content detail_content_center">
+                <h6>WA Templates</h6>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                  <h2>As a result of the Design Sprint our solution focused on providing a template list that would target common use cases. A specific action could then be the trigger to some of the most perfomed use cases in Pipedrive:</h2>
+                <ul>
+                  <li><h2>Add an activity</h2></li>
+                  <li><h2>Send an email</h2></li>
+                  <li><h2>Add a deal</h2></li>
+                  <li><h2>Move a deal to a specific stage</h2></li>
+                </ul>
+                <h2>To help the user set up the template quickly and with the least friction, we focused on having a wizard mapping the way. By dividing mandatory data input by sections we allowed the user to focus on a section at a time, avoiding overwhelming situations. By doing this we were pushing the user forward, giving back small hints that we was doing the right thing.</h2>
+              </div>
+              <div class="grid__col grid__col--1-of-2">
+                <img src="assets/wa_sidebar_1@3x.png" class="proj_image_full">
+              </div>
+              <div class="grid__col grid__col--1-of-2">
+                <img src="assets/wa_sidebar_2@3x.png" class="proj_image_full">
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/wa_sidebar_3@3x.png" class="proj_image_full">
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>We didn't do this:</h5>
+                <h2>Another need we were trying to cover was to start getting the user familiar with the canvas view, where the workflow structure would appear. In order to achieve this we added to the wizard a map of the workflow skeleton, as a preview. During testing we found out the additional information was actually adding an extra layer of complexity which was just confusing people.</h2>
+                <h2>We tried to provide the user with a different set of categories in the sidebar, specifically targetting common salesperson’s goals, instead of general actions to guide the user in discovering the most adequate template for a specific need. From Pipeline management and Lead nurturing through to Admin processes, that change only made the whole categorization unclear and proved that sticking to the simple actions was a better solution. We opted to focus on the action being taken.</h2>
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/worfklow_sequence@3x.png" class="proj_image_full">
+              </div>
+              <div class="title_projects proj_detail_content detail_content_center">
+                <h6>Test & Iterate</h6>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h2>Interestingly, even if users did understand that automation would help them focus on their business, save time and ultimately money, templates alone were not helping users understand how they could incorporate them into their own processes and existing workflows. This was a matter out of the scope of this project, but we considered important to provide as much as a quick introduction to it. In order to do that we added a “Get started” category, in which users would be presented with specific use cases that could inspire some of their own.</h2>
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/wa_usecases@3x.png" class="proj_image_full">
+              </div>
+              <div class="title_projects proj_detail_content detail_content_center">
+                <h2>During testing we also found out:</h2>
+                <ul>
+                  <li><h2>We were struggling with feature discovery, specially considering a solid product where new features and updates struggle to get to the user’s attention.</h2></li>
+                  <li><h2>People would like to test automations in order to be 100% sure that they wouldn’t be doing something wrong.</h2></li>
+                  <li><h2>More proficient users found the canvas to be limiting, not really tackling their needs, so they took advantage of the filtering system to create more options targeted to their specific needs.</h2></li>
+                  <li><h2>Users would frequently mention the need to share a workflow with team members, or manage permissions for editing and activating.</h2></li>
+                </ul>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <img src="assets/data_feature_implementation@3x.png" class="proj_image_full">
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h6>What's next?</h6>
+                <h2>Even though our success metrics were reached whithin the expected timeframe, we identified some important action points to keep in mind for future reference.</h2>
+                <h5>Future development</h5>
+                <ul>
+                  <li><h2>Improve discoverability in context, providing users with a prompt to the usage of automation when some specific behaviour is somehow tracked as a repetition that can be automated. In this scenario it would be more clear how automation could help the user save time in a more straightforward way.</h2></li>
+                  <li><h2>Add an Automation course module to Pipedrive’s Academy course list, so users can be even more confident about how the feature might work and impact their personal workflows.</h2></li>
+                  <li><h2>Improve filtering in the Pipeline view to allow users to clearly understand that adding filters to a specific view will enable more actions in the automation workflows.</h2></li>
+                  <li><h2>Potentially add an option to run tests to a specific worfklow.</h2></li>
+                  <li><h2>Users would benefit from a solution focused for teams, where permission management could be an option.</h2></li>
+                </ul>
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/macbookpro_wa@3x.png" class="proj_image_full">
+              </div>
+              <footer>
+                <div class="contact_me" id="contact">
+                  <h4>Let's talk:</h4>
+                  <h4>vanessaveigavilela@gmail.com</h4>
+                </div>
+                <div class="icon_container">
+                  <a class="ex2" href="https://dribbble.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/dribbble.svg"/><h4 class="icon_label">Dribbble</h4></a>
+                  <a class="ex2" href="https://www.linkedin.com/in/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/linkedin.svg"/><h4 class="icon_label">Linkedin</h4></a>
+                  <a class="ex2" href="https://instagram.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/instagram.svg"/><h4 class="icon_label">Instagram</h4></a>
+                  <a class="ex2" href="https://twitter.com/vanessavilela__" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/twitter.svg"/><h4 class="icon_label">Twitter</h4></a>
+                  <a class="ex2" href="https://medium.com/@Vaenx" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/medium.svg"/><h4 class="icon_label">Medium</h4></a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </main>
       </div>
-    </main>
+      <div id="design-sprint" data-tab-content>
+        <main>
+          <div class="projects_detail_container">
+            <div class="grid">
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/automation_designsprint_timeline2@3x.png" class="proj_image_full">
+              </div>
+              <div class="title_projects proj_detail_content detail_content_center">
+                <h6>The design sprint</h6>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h2>To address this issue we started by scheduling a 5-day design sprint based on Google Venture's book by Jake Knapp,
+                  entitled <a class="ex3" href="https://www.thesprintbook.com/"><i>Sprint</i></a>.
+                We gathered a small group of 3 developers, 2 designers, 1 researcher and 1 product manager and occasionally invited sales representatives.</h2>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>Day 1</h5>
+                <h2>We kicked the week off with an overview of what we want to achieve each day. It is crucial that we keep the plan by the end of each day,
+                because our end-goal is to test a working prototype on Friday to collect feedback and start a
+                <a class="ex3" href="https://medium.com/pipedrive-developers/scaling-pipedrive-engineering-from-teams-to-tribes-8f14fd92df8c">mission</a>
+                as soon as possible. The plan is to write down our assumptions regarding Workflow Automation and define our long-term goal, after which we add
+                our <i>How Might We</i> notes to the wall so we can actually define the end target we are going to focus on.
+                Oh and at the same time a few interviews are being done by our amazing researcher, so we have our personas ready to help keep us on track.</h2>
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/automation_designsprint_photos_day1@3x.png" class="proj_image_full">
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>Day 2</h5>
+                <h2>With an idea in mind of what we want to tackle, it is time to do some benchmarking and start thinking about possible solutions.
+                Let's diverge! We sit, we grab interesting examples and we present them to each other. It is very cool to have developers involved in the whole process
+                I might say!</h2>
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/automation_designsprint_photos_day2@3x.png" class="proj_image_full">
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>Day 3</h5>
+                <h2>Have an idea? Let's put it down! Time to converge and show everyone what our thoughts are. We grabbed post-its
+                and Sharpies and put our ideas in gallery view to later explain them to everyone and start the voting process on the ones we thought
+                might be the most valuable. This is particularly useful to have uncommon thoughts see the light of day and influence the
+                duller ones. Then the hard part begins, when we hit the board to try to make use of what our lovely minds came up with, trying to answer
+                the problem we identified the day before, in the specific parts that were mapped as those that needed more attention.</h2>
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/automation_designsprint_photos_day3@3x.png" class="proj_image_full">
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5>Day 4</h5>
+                <h2>This is prototype day! After deciding on a flow we were all comfortable with and that respected our northern star goal,
+                the day has finally come to put them into a hi-fi prototype (as much as possible). While designers were mainly busy with putting the
+                prototype together, the rest was busy working on a script and preparing the usability testing for the next day.</h2>
+                <h2>We focused mainly on (1) providing pre-made templates for the most used automations within Pipedrive, which would consequently
+                jumpstart the use of a <i>hard to learn</i> feature (based on the result of client surveys);
+                (2) we focused also on building a workflow creation wizard, which purpose would be to guide the user along the way and allow for a reduced
+                amount of customization as well as to make each step of the way as transparent as possible, to increase trust.</h2>
+                <h2>Here are the 2 main screens that reflect our learnings up until this point:</h2>
+              </div>
+              <div class="grid__col grid__col--1-of-2 projects_1left">
+                <img src="assets/automation_designsprint_photos_day4a@3x.png" class="proj_image_full">
+              </div>
+              <div class="grid__col grid__col--1-of-2 projects_1right">
+                <img src="assets/automation_designsprint_photos_day4b@3x.png" class="proj_image_full">
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h5 class="special_height">Day 5</h5>
+                <h2>It's Friyay! And we are ready to test the result of these 4 days of deep dive into workflow automation! The prototype will be useful to
+                understand if we are on the right track and answer questions like: <i>will our users value templates?</i> or <i>will template usage trigger
+                the usage of automation as a feature?</i>. So it's time to take notes, ask questions and analyse the results of our design sprint week.
+                Are we ready to use what we have come up with as the basis of our next mission?</h2>
+              </div>
+              <div class="proj_detail_content quote detail_content_center">
+                <h1 style="tex"><font color="#C3C6C9">Ideated, prototyped and tested! Let's build it!</font></h1>
+              </div>
+              <div class="proj_detail_content detail_content_center">
+                <h6>A usability journey</h6>
+                <h2>The basic and first prototype we came up with during the design sprint along with the results and findings we gathered from
+                testing it on friday, will lead the way into the Mission ahead. Changes are incorporated and, for the next 2 months, the focus will
+                be on building a consistent solution and have it tested internally and externally to make sure the changes made are what we
+                are looking for.</h2>
+                <h2>Our initial prototype had some problems that we immediately identified during user testing, but it was useful to make sure we would
+                definitely explore templates and the use of a creation wizard. On the down side? We had a lot to improve regarding onboarding
+                and preparation before landing in the unruly area of <i>the canvas</i>.</h2>
+                <h2>Templates should make users' life easier by allowing to pick a premade workflow, but on version 1 it wasn't completely clear what
+                would trigger the actions and what they would actually be. Also, the idea of making it more transparent and user friendly wasn't quite
+                coming along from there. Along the way we decided to illustrate what the templates would do, which proved much better in terms of
+                both user understanding and engagement.</h2>
+              </div>
+              <div class="grid__col grid__col--1-of-2 projects_1left">
+                <img src="assets/automation_designsprint_photos_day5a@3x.png" class="proj_image_full">
+              </div>
+              <div class="grid__col grid__col--1-of-2 projects_1right">
+                <img src="assets/automation_designsprint_photos_day5b@3x.png" class="proj_image_full">
+              </div>
+              <!--div class="proj_detail_content detail_content_center">
+                <h2 class="grid__col grid__col--2-of-2 special_height">Let's find the differences. Between the first version of this prototype and its final implementation, many changes were made and
+                so ... </h2>
+              </div-->
+              <div class="proj_detail_content detail_content_center special_height">
+                <h2>Even if some core ideas remained — visual representation of the expected workflow, representation of the value provided to the user,
+                the immediate readability of the workflow alone and the filtration through a sidebar — there was an evolution towards a more visually
+                appealing solution, mainly to make it as friendly as possible and hopefully bring back the customers that the automation feature was scaring away.</h2>
+                <h2>The workflow creation wizard was a challenge in itself. We did want to both introduce the concept of triggers, actions and conditions to
+                users who are less familiar with using the <i>canvas</i>, as well as to help map the idea of consequence and timeline at the same time.
+                Finally we decided to focus on the idea of a unique timeline and ditched the skeleton of the canvas next to the blocks of triggers and actions,
+                since after testing with users it proved to be mostly a distraction rather than an added value to explain the process.</h2>
+              </div>
+              <div class="grid__col grid__col--1-of-2 projects_1left">
+                <img src="assets/automation_designsprint_photos_day5c@3x.png" class="proj_image_full">
+              </div>
+              <div class="grid__col grid__col--1-of-2 projects_1right">
+                <img src="assets/automation_designsprint_photos_day5d@3x.png" class="proj_image_full">
+              </div>
+              <div class="proj_detail_content detail_content_center special_height">
+                <h2>We focused in providing working templates that users could quickly put in place, making it much easier to create an automated workflow, and
+                  in increasing user trust by focusing on reducing visual complexity and adding a more humane touch. Illustrations played a key role in that
+                  process, turning the whole <i>automatic</i> aura of the feature, at the same time that it stressed the time people would be saving by
+                  relying on automatic workflows to help them with more repetitive tasks.</h2>
+                <h2></h2>
+              </div>
+              <div class="grid__col grid__col--2-of-2">
+                <img src="assets/automation_designsprint_prototype@3x.png" class="proj_image_full">
+              </div>
+              <footer>
+                <div class="contact_me" id="contact">
+                  <h4>Let's talk:</h4>
+                  <h4>vanessaveigavilela@gmail.com</h4>
+                </div>
+                <div class="icon_container">
+                  <a class="ex2" href="https://dribbble.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/dribbble.svg"/><h4 class="icon_label">Dribbble</h4></a>
+                  <a class="ex2" href="https://www.linkedin.com/in/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/linkedin.svg"/><h4 class="icon_label">Linkedin</h4></a>
+                  <a class="ex2" href="https://instagram.com/vanessaveigavilela" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/instagram.svg"/><h4 class="icon_label">Instagram</h4></a>
+                  <a class="ex2" href="https://twitter.com/vanessavilela__" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/twitter.svg"/><h4 class="icon_label">Twitter</h4></a>
+                  <a class="ex2" href="https://medium.com/@Vaenx" target="_blank" rel="noopener noreferrer"><img class="svg_icons" src="assets/medium.svg"/><h4 class="icon_label">Medium</h4></a>
+                </div>
+              </footer>
+
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 
 </html>
