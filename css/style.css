@@ -345,7 +345,7 @@ footer {
 }
 
 .about_me_photo {
-  height: 350px;
+  height: 400px;
   z-index: 1;
   position: relative;
 }
@@ -445,6 +445,26 @@ footer {
 
 .footer {
   margin-top: 15vh;
+}
+
+.background_container {
+  width: 100%;
+  /*position: absolute;*/
+  margin-top: 0;
+  z-index: 0;
+  background-color: #2D313A;
+}
+
+.videoMock {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.videoStroke{
+  border-radius: 40px;
+  border-color: #000000;
+  border-width: 10px;
+  border-style: solid;
 }
 
 /* Blogpost Detail
@@ -738,6 +758,23 @@ _______________________________________*/
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+
+/*Videos
+_______________________________________*/
+
+.videoAdd {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
 }
 
 /* Tweaks
